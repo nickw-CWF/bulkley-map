@@ -567,7 +567,7 @@
     "source-layer": "whse_basemapping.fwa_watershed_groups_poly",
     "minzoom": 9,
     "paint": {
-      "fill-opacity": 0,
+      "fill-opacity": 1,
       "fill-outline-color": "black"
     },
     "interactive": true
