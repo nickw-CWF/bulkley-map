@@ -75,6 +75,14 @@
       ],
       "minzoom": 8,
       "maxzoom": 19
+    },
+    "watershed_groups": {
+      "type":"vector",
+      "tiles": [
+        "https://tiles.hillcrestgeo.ca/bcfishpass/whse_basemapping.fwa_watershed_groups_poly/{z}/{x}/{y}.pbf"
+      ],
+      "minzoom": 8,
+      "maxzoom": 19
     }
   },
   "sprite": "https://www.hillcrestgeo.ca/projects/bcfishpass/maki_default",
@@ -549,6 +557,18 @@
         "text-color": "hsl(230, 29%, 35%)",
         "text-halo-color": "hsl(0, 0%, 100%)",
         "text-halo-width": 0
+    },
+    "interactive": true
+  },
+  {
+    "id": "watershed-groups",
+    "type": "fill",
+    "source": "watershed_groups",
+    "source-layer": "whse_basemapping.fwa_watershed_groups_poly",
+    "minzoom": 9,
+    "paint": {
+      "fill-opacity": 0,
+      "fill-outline-color": "black"
     },
     "interactive": true
   }
